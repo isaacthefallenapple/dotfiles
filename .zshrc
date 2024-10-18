@@ -90,10 +90,6 @@ _fzf_compgen_dir() {
 	fd --type d --hidden --follow --exclude ".git" . "$1"
 }
 
-source $HOME/.config/broot/launcher/bash/br
-
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
-
 function mkcdir() {
 	mkdir "$1" && cd "$1"
 }
